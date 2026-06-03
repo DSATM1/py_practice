@@ -122,32 +122,29 @@ else:
     print(f"{count} ❌ Not an Armstrong Number!")"""
 
 
+"""n = int(input("Enter the number: ").strip())
+original = n         # save n before touching it!
 
+# Step 1: count digits
+temp = n
+power = 0
+while temp > 0:
+    temp = temp // 10
+    power += 1
 
+# Step 2: extract digits and compute armstrong sum
+temp = n                # reset temp to n again!
+armstrong_sum = 0
+while temp > 0:
+    last_digit = temp % 10
+    armstrong_sum += last_digit**power  # digit ** power
+    temp = temp // 10
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Step 3: compare
+if original == armstrong_sum:
+    print("✅ Armstrong!")
+else:
+    print("❌ Not Armstrong!")"""
 
 
 
