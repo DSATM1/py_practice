@@ -50,3 +50,10 @@ print("outside",a)"""
 
 hello()
 hello("Putta","Collegue of Mr. Suraj S P")"""
+
+"""def min_max(a,b,c,d): #type:ignore
+    low = min(a,b,c,d) #type:ignore
+    high = max(a,b,c,d) #type:ignore
+    return low, high #type:ignore
+res, res2 = min_max(2,0,98,9)
+print(f"Minium = {res}, Maximum = {res2}")"""
