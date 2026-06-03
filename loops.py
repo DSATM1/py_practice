@@ -67,11 +67,13 @@ Enter the number: 12345
 Reverse : 54321
 ```"""
 
-n = int(input("Enter the number:").strip())
+"""n = int(input("Enter the number:").strip())
 
 count = 0
 while n > 0:
     last_digit = n % 10
     count = count + last_digit
     n = n//10
-print(f"Sum of Digits: {count}")
+print(f"Sum of Digits: {count}")"""
+
+"""Fibonachii Series"""
