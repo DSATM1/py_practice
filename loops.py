@@ -153,3 +153,19 @@ Take N as input. Print all prime numbers from 2 to N using nested loops.
 
 Enter N : 30
 2 3 5 7 11 13 17 19 23 29"""
+
+
+
+"""n = int(input("Enter n:").strip())
+is_prime = True #we assuming 
+for num in range(2, n+1):
+    is_prime = True    #← reset every iteration!
+        
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+        
+    if is_prime:
+       print(num)"""
+
