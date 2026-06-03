@@ -15,9 +15,15 @@ greet("Putta")"""
 result = add(5,3)
 print(result)"""
 
-def add_return(x,y): #type:ignore
+"""def add_return(x,y): #type:ignore
     return x+y  #type:ignore
 result = add_return(10,20)
 print(result)
-print(result*2)
+print(result*2)"""
+
+"""def stu_info(name, age, cgpa): #type:ignore
+    print(f"Suraj : {name}| Age : {age} | CGPA : {cgpa}")
+
+stu_info("Suraj",24,8.5)  # right order
+stu_info(8.5,"Suraj",1)  # wrong order"""
 
