@@ -23,3 +23,19 @@ else:
 if __name__ == "__main__":
     if rev(x):"""
 #if x = 3 then ans = 3 2 1 0;
+
+"""Divisible by both 3 and 5  →  print "FizzBuzz"
+Divisible by 3 only        →  print "Fizz"
+Divisible by 5 only        →  print "Buzz"
+Otherwise                  →  print the number"""
+
+n = int(input("Enter the number:").strip())
+for i in range(1,n+1):
+    if i % 3 == 0 and i % 5 == 0 :
+        print("FizzBuzz",end = " ")
+    elif i % 3 == 0:
+        print("Fizz",end = " ")
+    elif i % 5 == 0:
+        print("Buzz", end = " ")
+    else:
+        print(i,end= " ")  
