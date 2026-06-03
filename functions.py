@@ -57,3 +57,19 @@ hello("Putta","Collegue of Mr. Suraj S P")"""
     return low, high #type:ignore
 res, res2 = min_max(2,0,98,9)
 print(f"Minium = {res}, Maximum = {res2}")"""
+
+"""# Example: Fibonacci sequence generator (commented)
+# This function returns a list containing the first n Fibonacci numbers.
+# It demonstrates iteration, tuple unpacking, and returning a collection.
+def fibonacci(n):  # type:ignore
+    """Return a list with the first n Fibonacci numbers."""
+    a, b = 0, 1
+    seq = []
+    for _ in range(n):
+        seq.append(a)
+        a, b = b, a + b
+    return seq
+
+# Demonstration / usage example:
+print("Fibonacci(7):", fibonacci(7))  # expected: [0, 1, 1, 2, 3, 5, 8]
+"""
