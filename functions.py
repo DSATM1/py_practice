@@ -27,3 +27,12 @@ print(result*2)"""
 stu_info("Suraj",24,8.5)  # right order
 stu_info(8.5,"Suraj",1)  # wrong order"""
 
+x = 100
+def my_func():
+    x = 50
+    print(f"Inside : {x}")
+
+my_func()
+print(f"outside : {x}")
+
+ 
