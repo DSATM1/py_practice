@@ -32,3 +32,26 @@ n = int(input("Enter n:").strip())
 fact = factorial(n)
 print(f"{n}! : {fact}")"""
 
+
+
+"""cel=int(input("Enter Temp in Celcius :"))
+print(f"Fahrenheit : {(cel*9/5)+32} F")
+print(f"Kelvin : {(cel+273.15)} K")"""
+
+"""def cel(temp):
+    cel = ((temp*9/5)+32)
+    kel = temp+273.15
+    return cel,kel  
+temp=int(input("Enter Temp in Celcius :"))
+res = cel(temp)
+print(res)"""
+
+
+"""def celsius_to_fahrenheit(c):   # one parameter only!
+    cel = ((c*9/5)+32)
+    k = c+273.15
+    return cel,k
+res = float(input("Enter Temp in Celcius :"))
+faren, kelvin = celsius_to_fahrenheit(res)
+print(f"Fahrenheit : {faren} F")
+print(f"kelvin : {kelvin} K")"""
