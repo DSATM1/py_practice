@@ -77,3 +77,17 @@ res = calculator(a,b,op)
 print(res)"""
 
 
+"""def is_palindrome(str):
+    l = len(str)
+    #left = 0
+    #right = 0 
+    
+    for i in range(0,l//2):
+        #left = i
+        #right = l - i - 1 
+        if str[i] != str[l - i - 1]:
+            return False
+    return True 
+
+str = input("Enter a String:").strip().lower()
+print(is_palindrome(str))"""
