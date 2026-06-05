@@ -134,3 +134,34 @@ greet("Suraj", "Evening") """
 res = input("Enter a string :").strip()
 print(count_vowel(res))"""
 
+
+
+# is_armstrong(153) → True
+# is_armstrong(123) → False
+
+# Armstrong numbers from 1 to 1000:
+# 1 2 3 4 5 6 7 8 9 153 370 371 407
+
+n = int(input("Enter the number: ").strip())
+original = n         # save n before touching it!
+
+# Step 1: count digits
+temp = n
+power = 0
+while temp > 0:
+    temp = temp // 10
+    power += 1
+
+# Step 2: extract digits and compute armstrong sum
+temp = n                # reset temp to n again!
+armstrong_sum = 0
+while temp > 0:
+    last_digit = temp % 10
+    armstrong_sum += last_digit**power  # digit ** power
+    temp = temp // 10
+
+# Step 3: compare
+if original == armstrong_sum:
+    print("✅ Armstrong!")
+else:
+    print("❌ Not Armstrong!")
