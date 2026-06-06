@@ -1,0 +1,28 @@
+# Core data + ML
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+scipy
+
+# Notebooks / tooling
+jupyterlab
+notebook
+nbformat
+
+# Deep learning & transformers
+torch
+torchvision
+torchaudio
+transformers
+datasets
+accelerate
+safetensors
+
+# Utilities
+tqdm
+wandb
+ipython
+black
+flake8
