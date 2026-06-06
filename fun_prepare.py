@@ -212,7 +212,7 @@ Series  : [0, 1, 1, 2, 3, 5, 8, 13]
 Sum     : 33
 Average : 4.13"""
 
-def fibonacci(n):
+"""def fibonacci(n):
     series = []
     a = 0
     b = 1
@@ -227,14 +227,6 @@ total = sum(series)
 avg = total / len(series)
 print(f"Series : {series}")
 print(f"Sum : {total}")
-print(f"Average : {avg}")
+print(f"Average : {avg}")"""
 
-# n = int(input("Enter the number:").strip())
-# a = 0
-# b = 1
-# for i in range(n):
-#     print(a,end =" ")
-#     a,b=b,a+b
-    
-# series = list(input("Enter series : ").strip().split())
-# print(series)
+
