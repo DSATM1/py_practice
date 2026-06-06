@@ -338,7 +338,7 @@ def result_card(s1, s2, s3, s4, s5):
 
     if failed:
         result = "FAIL"
-    else:
+    else: 
         result = "PASS"
 
     print("\n--- Result Card ---")
