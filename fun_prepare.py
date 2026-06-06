@@ -377,7 +377,7 @@ Marks Program
  4. Call get_grade(percentage) to get grade string.
  5. Print formatted result card; test boundary grades and failing marks.
 
-General logic-building skills
+General logic-building skills    
 
  - Decompose: split tasks into single-responsibility functions.
  - Start simple: get a working path, then add validation and formatting.
