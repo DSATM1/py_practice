@@ -230,70 +230,125 @@ print(f"Sum : {total}")
 print(f"Average : {avg}")"""
 
 
+#print("\n===== Mini Bank =====")
+
 
 """def display_menu():
-     print("\n===== Mini Bank =====")
-     print("1. Check Balance")
-     print("2. Deposit")
-     print("3. Withdraw")
-     print("4. Exit")
- 
- def check_balance(balance):
-     print(f"ð° Current Balance : â¹{balance:.2f}")
-     return balance
- 
- def deposit(balance):
-     amt_str = input("Enter deposit amount : ").strip()
-     try:
-         amt = float(amt_str)
-         if amt <= 0:
-             print("â Enter a positive amount.")
-             return balance
-     except ValueError:
-         print("â Invalid amount.")
-         return balance
-     balance += amt
-     print(f"â Deposited â¹{amt:.2f}. New Balance : â¹{balance:.2f}")
-     return balance
- 
- def withdraw(balance):
-     amt_str = input("Enter withdrawal amount : ").strip()
-     try:
-         amt = float(amt_str)
-         if amt <= 0:
-             print("â Enter a positive amount.")
-             return balance
-     except ValueError:
-         print("â Invalid amount.")
-         return balance
-     if amt > balance:
-         print("â Insufficient funds.")
-         return balance
-     balance -= amt
-     print(f"â Withdrawn â¹{amt:.2f}. New Balance : â¹{balance:.2f}")
-     return balance
- 
- def main():
-     balance = 10000.00  # starting balance
-     while True:
-         display_menu()
-         choice = input("Choose option : ").strip()
-         if choice == "1":
-             balance = check_balance(balance)
-         elif choice == "2":
-             balance = deposit(balance)
-         elif choice == "3":
-             balance = withdraw(balance)
-         elif choice == "4":
-             print("ð Thank you for banking with us!")
-             break
-         else:
-             print("â Invalid option. Please choose 1-4.")
- 
- if __name__ == "__main__":
-     main()"""
+    print("\n===== Mini Bank =====")
+    print("1. Check Balance")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. Exit")
 
 
+def check_balance(balance):
+    print(f"Current Balance : ₹{balance:.2f}")
+    return balance
+
+
+def deposit(balance):
+    amount = float(input("Enter deposit amount: ").strip())
+
+    if amount <= 0:
+        print("Enter a positive amount.")
+    else:
+        balance = balance + amount
+        print(f"Deposited ₹{amount:.2f}")
+        print(f"New Balance : ₹{balance:.2f}")
+
+    return balance
+
+
+def withdraw(balance):
+    amount = float(input("Enter withdrawal amount: ").strip())
+
+    if amount <= 0:
+        print("Enter a positive amount.")
+    elif amount > balance:
+        print("Insufficient funds.")
+    else:
+        balance = balance - amount
+        print(f"Withdrawn ₹{amount:.2f}")
+        print(f"New Balance : ₹{balance:.2f}")
+
+    return balance
+
+
+def main():
+    balance = 10000.00
+
+    while True:
+        display_menu()
+
+        choice = input("Choose option: ").strip()
+
+        if choice == "1":
+            balance = check_balance(balance)
+
+        elif choice == "2":
+            balance = deposit(balance)
+
+        elif choice == "3":
+            balance = withdraw(balance)
+
+        elif choice == "4":
+            print("Thank you for banking with us!")
+            break
+
+        else:
+            print("Invalid option. Please choose 1-4.")
+
+
+main()"""
+
+
+# print("\n--- Result Card ---")
+
+
+"""def get_grade(percentage):
+    if percentage >= 90:
+        return "A+"
+    elif percentage >= 80:
+        return "A"
+    elif percentage >= 70:
+        return "B"
+    elif percentage >= 60:
+        return "C"
+    elif percentage >= 50:
+        return "D"
+    elif percentage >= 35:
+        return "E"
+    else:
+        return "F"
+
+def result_card(s1, s2, s3, s4, s5):
+    subjects = [s1, s2, s3, s4, s5]
+
+    total = 0
+    failed = False
+
+    for mark in subjects:
+        total = total + mark
+
+        if mark < 35:
+            failed = True
+
+    percentage = (total / 500) * 100
+    grade = get_grade(percentage)
+
+    if failed:
+        result = "FAIL"
+    else:
+        result = "PASS"
+
+    print("\n--- Result Card ---")
+    print(f"Total      : {total}/500")
+    print(f"Percentage : {percentage:.2f}%")
+    print(f"Grade      : {grade}")
+    print(f"Result     : {result}")
+
+
+result_card(96, 23, 90, 85, 85)"""
 
 """get_grade(86.6) → "A"
 --- Result Card ---
@@ -301,3 +356,32 @@ Total      : 433/500
 Percentage : 86.60%
 Grade      : A
 Result     : ✅ PASS"""
+
+
+"""Concise step-by-step approach and logic-building tips for both programs:
+
+Mini Bank
+
+ 1. Understand requirements: menu loop, separate functions, keep running until exit.
+ 2. Break into functions: display_menu(), check_balance(balance), deposit(balance), withdraw(balance), main().
+ 3. Define inputs/outputs: functions take/return balance; main holds state.
+ 4. Validate inputs: numeric, positive, sufficient funds for withdraw.
+ 5. Format output (currency) and print confirmations.
+ 6. Test with sequences (depositâwithdrawâexit) and edge cases (invalid input, overdraft).
+
+Marks Program
+
+ 1. Understand: compute total, percentage, grade, pass/fail.
+ 2. Break into functions: get_grade(percentage) and result_card(s1..s5).
+ 3. result_card: sum subjects â total, percentage = total/500*100, check any mark<35 â FAIL.
+ 4. Call get_grade(percentage) to get grade string.
+ 5. Print formatted result card; test boundary grades and failing marks.
+
+General logic-building skills
+
+ - Decompose: split tasks into single-responsibility functions.
+ - Start simple: get a working path, then add validation and formatting.
+ - Think in data flow: what each function receives and returns.
+ - Handle edge cases early (invalid input, boundaries).
+ - Iterate and test small units; add print/debug statements.
+ - Read other solutions and refactor for clarity and reuse."""
